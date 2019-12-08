@@ -11,8 +11,8 @@
 name: OpenWrt-CL
 
 on:
-  schedule:
-    - cron: 0 20 * * *
+#  schedule:
+#    - cron: 0 20 * * *
    push:
      tags:
        - 'V*'
@@ -23,7 +23,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-18.04
-
     steps:
       - name: Checkout
         uses: actions/checkout@master
