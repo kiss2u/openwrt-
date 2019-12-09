@@ -1,0 +1,22 @@
+Source-Makefile: feeds/lienol/lienol/luci-theme-bootstrap-mc/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-theme-bootstrap-mc
+Submenu: 4. Themes
+Version: 1.0-40-20191207
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: Bootstrap Magic Change Theme By Lienol
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Bootstrap Magic Change Theme By Lienol
+
+@@
+
+

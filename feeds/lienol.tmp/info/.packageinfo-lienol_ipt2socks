@@ -1,0 +1,21 @@
+Source-Makefile: feeds/lienol/lienol/ipt2socks/Makefile
+
+Package: ipt2socks
+Version: 1.0.1-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libuv
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5
+Maintainer: 
+Source: ipt2socks-1.0.1-b9bd7d888f2f95a6d7306030c8a5e252732dc451.tar.gz
+Type: ipkg
+Description: Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5.
+https://github.com/zfl9/ipt2socks
+
+@@
+
+

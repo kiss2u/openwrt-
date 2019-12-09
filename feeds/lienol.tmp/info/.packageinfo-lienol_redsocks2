@@ -1,0 +1,21 @@
+Source-Makefile: feeds/lienol/lienol/redsocks2/Makefile
+
+Package: redsocks2
+Version: 0.67-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libevent2 +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Redirect any TCP connection to a SOCKS or HTTPS proxy server
+Maintainer: semigodking  <semigodking@gmail.com>
+Source: redsocks2-0.67-3052eeab75ff1ebd20c22334fbbecd808525bca7.tar.gz
+Type: ipkg
+Description: This is a modified version of original redsocks. The name is changed to be REDSOCKS2 since this release to distinguish with original redsocks. This variant is useful for anti-GFW (Great Fire Wall).
+https://github.com/semigodking/redsocks
+semigodking  <semigodking@gmail.com>
+@@
+
+

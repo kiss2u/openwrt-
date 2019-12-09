@@ -1,0 +1,21 @@
+Source-Makefile: feeds/lienol/lienol/syncthing/Makefile
+
+Package: syncthing
+Version: v1.3.2-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A continuous file synchronization program
+Maintainer: 
+Source: syncthing-linux--v1.3.2.tar.gz
+Type: ipkg
+Description:   Syncthing is a continuous file synchronization program.
+https://github.com/syncthing/syncthing
+
+@@
+
+

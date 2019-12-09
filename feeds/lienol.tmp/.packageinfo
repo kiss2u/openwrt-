@@ -1,0 +1,1581 @@
+Source-Makefile: feeds/lienol/lienol/brook/Makefile
+
+Package: brook
+Version: 20190601-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Brook is a cross-platform proxy software
+Maintainer: 
+Source: brook
+Type: ipkg
+Description:   Brook is a cross-platform proxy software
+https://github.com/txthinking/brook
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/chinadns/Makefile
+
+Package: ChinaDNS
+Version: 1.3.3-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Protect yourself against DNS poisoning in China.
+Maintainer: Jian Chang <aa65535@live.com>
+Source: ChinaDNS-1.3.3-00616680114011553881760e843b77a3519e8fbf.tar.xz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Protect yourself against DNS poisoning in China.
+https://github.com/shadowsocks/ChinaDNS
+Jian Chang <aa65535@live.com>
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/dns-forwarder/Makefile
+
+Package: dns-forwarder
+Version: 1.2.1-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Forwarding DNS queries on TCP transport
+Maintainer: Jian Chang <aa65535@live.com>
+Source: dns-forwarder-1.2.1-289e8c9c7167200668dff83b1e0cbce258665387.tar.gz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Forwarding DNS queries on TCP transport.
+https://github.com/aa65535/hev-dns-forwarder
+Jian Chang <aa65535@live.com>
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/dns2socks/Makefile
+
+Package: dns2socks
+Submenu: IP Addresses and Names
+Version: 2.0-20150628
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: The utility to resolve DNS requests via a SOCKS5 tunnel.
+Maintainer: ghostmaker
+Source: SourceCode.zip
+License: BSD-3-Clause
+Type: ipkg
+Description:   This is a utility to resolve DNS requests via a SOCKS5 tunnel and caches the answers.
+http://dns2socks.sourceforge.net/
+ghostmaker
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/ipt2socks/Makefile
+
+Package: ipt2socks
+Version: 1.0.1-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libuv
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5
+Maintainer: 
+Source: ipt2socks-1.0.1-b9bd7d888f2f95a6d7306030c8a5e252732dc451.tar.gz
+Type: ipkg
+Description: Utility for converting iptables (REDIRECT/TPROXY) to SOCKS5.
+https://github.com/zfl9/ipt2socks
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/kcptun-client/Makefile
+
+Package: kcptun-client
+Version: 20191127-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Kcptun is a cross-platform proxy software
+Maintainer: 
+Source: kcptun-linux--20191127.tar.gz
+Type: ipkg
+Description:   Kcptun is a Fast and Reliable ARQ Protocol tunnel
+https://github.com/xtaci/kcptun
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-brook-server/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-brook-server
+Submenu: 3. Applications
+Version: 1.0-1-20191120
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +brook
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: LuCI support for Brook Server
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for Brook Server
+
+@@
+
+Package: luci-i18n-brook-server-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-1-20191120
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-brook-server
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-brook-server - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-brook-server - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-control-mia/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-control-mia
+Submenu: 3. Applications
+Version: 1.0-3-20190309
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: LuCI support for Mia From Koolshare
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for Mia From Koolshare
+
+@@
+
+Package: luci-i18n-control-mia-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-3-20190309
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-control-mia
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-control-mia - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-control-mia - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-control-timewol/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-control-timewol
+Submenu: 3. Applications
+Version: 1.0-3-20190309
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: LuCI support for Timewol From Koolshare
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for Timewol From Koolshare
+
+@@
+
+Package: luci-i18n-control-timewol-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-3-20190309
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-control-timewol
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-control-timewol - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-control-timewol - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-control-webrestriction/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-control-webrestriction
+Submenu: 3. Applications
+Version: 1.0-3-20190309
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: LuCI support for Webrestriction From Koolshare
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for Webrestriction From Koolshare
+
+@@
+
+Package: luci-i18n-control-webrestriction-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-3-20190309
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-control-webrestriction
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-control-webrestriction - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-control-webrestriction - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-control-weburl/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-control-weburl
+Submenu: 3. Applications
+Version: 1.0-3-20190309
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +iptables-mod-filter +kmod-ipt-filter
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: LuCI support for Weburl From Koolshare
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for Weburl From Koolshare
+
+@@
+
+Package: luci-i18n-control-weburl-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-3-20190309
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-control-weburl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-control-weburl - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-control-weburl - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-fileassistant/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-fileassistant
+Submenu: 3. Applications
+Version: 1.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: LuCI support for Fileassistant
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for Fileassistant
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-filebrowser/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-filebrowser
+Submenu: 3. Applications
+Version: 1.0-9-20190718
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: LuCI support for FileBrowser
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for FileBrowser
+
+@@
+
+Package: luci-i18n-filebrowser-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-9-20190718
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-filebrowser
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-filebrowser - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-filebrowser - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-guest-wifi/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-guest-wifi
+Submenu: 3. Applications
+Version: 1.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: luci-app-guest-wifi
+Maintainer: 
+Source: 
+Type: ipkg
+Description: luci-app-guest-wifi
+
+@@
+
+Package: luci-i18n-guest-wifi-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-guest-wifi
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-guest-wifi - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-guest-wifi - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-ipsec-vpnserver-manyusers/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-ipsec-vpnserver-manyusers
+Submenu: 3. Applications
+Version: 1.0-12-20190704
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +strongswan-minimal +strongswan-mod-xauth-generic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: LuCI support for IPSec VPN Server
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for IPSec VPN Server
+
+@@
+
+Package: luci-i18n-ipsec-vpnserver-manyusers-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-12-20190704
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ipsec-vpnserver-manyusers
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-ipsec-vpnserver-manyusers - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ipsec-vpnserver-manyusers - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-kcptun/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host 
+
+Package: luci-app-kcptun
+Submenu: 3. Applications
+Version: 1.4.5-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +jshn +wget +luci-lib-jsonc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for Kcptun
+Maintainer: Xingwang Liao <kuoruan@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Description: LuCI support for Kcptun
+Xingwang Liao <kuoruan@gmail.com>
+@@
+
+Package: luci-i18n-kcptun-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.4.5-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-kcptun
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-kcptun - zh-cn translation
+Maintainer: Xingwang Liao <kuoruan@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-kcptun - 中文 (Chinese)
+Xingwang Liao <kuoruan@gmail.com>
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-kodexplorer/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-kodexplorer
+Submenu: 3. Applications
+Version: 1.0-8-20191023
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +nginx +zoneinfo-asia +php7 +php7-fpm +php7-mod-curl +php7-mod-gd +php7-mod-iconv +php7-mod-json +php7-mod-mbstring +php7-mod-opcache +php7-mod-session +php7-mod-zip
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: LuCI support for KodExplorer
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for KodExplorer
+
+@@
+
+Package: luci-i18n-kodexplorer-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-8-20191023
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-kodexplorer
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-kodexplorer - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-kodexplorer - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-passwall/Makefile
+
+Package: luci-app-passwall
+Submenu: 3. Applications
+Version: 3.0-122-20191209
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +wget +libcurl +libmbedtls +ca-bundle +ca-certificates +resolveip +iptables-mod-tproxy +kmod-ipt-tproxy +iptables-mod-ipopt +kmod-ipt-ipopt +ip +ipset +coreutils +coreutils-base64 +coreutils-nohup +luci-lib-jsonc +unzip +dnsmasq-full +tcping +PACKAGE_luci-app-passwall_INCLUDE_redsocks2:redsocks2 +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks:shadowsocks-libev-ss-redir +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR:shadowsocksr-libev-alt +PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_socks:shadowsocks-libev-ss-local +PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_socks:shadowsocksr-libev-ssr-local +PACKAGE_luci-app-passwall_INCLUDE_V2ray:v2ray +PACKAGE_luci-app-passwall_INCLUDE_Trojan:trojan +PACKAGE_luci-app-passwall_INCLUDE_Brook:brook +PACKAGE_luci-app-passwall_INCLUDE_kcptun:kcptun-client +PACKAGE_luci-app-passwall_INCLUDE_haproxy:haproxy +PACKAGE_luci-app-passwall_INCLUDE_ChinaDNS:ChinaDNS +PACKAGE_luci-app-passwall_INCLUDE_pdnsd:pdnsd-alt +PACKAGE_luci-app-passwall_INCLUDE_dns2socks:dns2socks +PACKAGE_luci-app-passwall_INCLUDE_dns-forwarder:dns-forwarder
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: LuCI support for PassWall By Lienol
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for PassWall By Lienol
+
+@@
+Config:
+menu "Configuration"
+
+config PACKAGE_luci-app-passwall_INCLUDE_redsocks2
+	bool "Include RedSocks2"
+	default n
+	
+config PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks
+	bool "Include Shadowsocks Redir (ss-redir)"
+	default n
+	
+config PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR
+	bool "Include ShadowsocksR Redir (ssr-redir)"
+	default y
+
+config PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_socks
+	bool "Include Shadowsocks Socks (ss-local)"
+	default n
+	
+config PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_socks
+	bool "Include ShadowsocksR Socks (ssr-local)"
+	default n
+	
+config PACKAGE_luci-app-passwall_INCLUDE_V2ray
+	bool "Include V2ray"
+	default y
+
+config PACKAGE_luci-app-passwall_INCLUDE_Trojan
+	bool "Include Trojan"
+	default n
+	
+config PACKAGE_luci-app-passwall_INCLUDE_Brook
+	bool "Include Brook"
+	default n
+	
+config PACKAGE_luci-app-passwall_INCLUDE_kcptun
+	bool "Include kcptun"
+	default n
+
+config PACKAGE_luci-app-passwall_INCLUDE_haproxy
+	bool "Include haproxy"
+	default n
+	
+config PACKAGE_luci-app-passwall_INCLUDE_ChinaDNS
+	bool "Include ChinaDNS"
+	default y
+
+config PACKAGE_luci-app-passwall_INCLUDE_pdnsd
+	bool "Include pdnsd"
+	default y
+	
+config PACKAGE_luci-app-passwall_INCLUDE_dns2socks
+	bool "Include dns2socks"
+	default n
+	
+config PACKAGE_luci-app-passwall_INCLUDE_dns-forwarder
+	bool "Include dns-forwarder"
+	default n
+
+endmenu
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-pppoe-relay/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-pppoe-relay
+Submenu: 3. Applications
+Version: 1.0-10-20190704
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +rp-pppoe-common +rp-pppoe-relay
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: LuCI support for PPPoE Relay
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for PPPoE Relay
+
+@@
+
+Package: luci-i18n-pppoe-relay-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-10-20190704
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-pppoe-relay
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-pppoe-relay - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-pppoe-relay - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-pppoe-server/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-pppoe-server
+Submenu: 3. Applications
+Version: 1.0-8-20190704
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +rp-pppoe-common +rp-pppoe-server
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: LuCI support for PPPoE Server
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for PPPoE Server
+
+@@
+
+Package: luci-i18n-pppoe-server-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-8-20190704
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-pppoe-server
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-pppoe-server - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-pppoe-server - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-pptp-vpnserver-manyusers/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-pptp-vpnserver-manyusers
+Submenu: 3. Applications
+Version: 1.0-12-20190704
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +pptpd +kmod-mppe +ppp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: LuCI support for PPTP VPN Server
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for PPTP VPN Server
+
+@@
+
+Package: luci-i18n-pptp-vpnserver-manyusers-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-12-20190704
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-pptp-vpnserver-manyusers
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-pptp-vpnserver-manyusers - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-pptp-vpnserver-manyusers - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-ramfree/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-ramfree
+Submenu: 3. Applications
+Version: 1.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: Add Release RAM Button
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Add Release RAM Button
+
+@@
+
+Package: luci-i18n-ramfree-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ramfree
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-ramfree - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ramfree - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-softethervpn/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-softethervpn
+Submenu: 3. Applications
+Version: 1.0-10-20191116
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +zlib +libpthread +librt +libreadline +libncurses +libiconv-full +kmod-tun +libopenssl +softethervpn5-bridge +softethervpn5-client +softethervpn5-server
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: LuCI support for SoftEtherVPN
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for SoftEtherVPN
+
+@@
+
+Package: luci-i18n-softethervpn-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-10-20191116
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-softethervpn
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-softethervpn - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-softethervpn - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-ssr-libev-server/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-ssr-libev-server
+Submenu: 3. Applications
+Version: 1.0-6-20190704
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsodium +shadowsocksr-libev-server
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: LuCI support for SSR Libev Server
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for SSR Libev Server
+
+@@
+
+Package: luci-i18n-ssr-libev-server-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-6-20190704
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ssr-libev-server
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-ssr-libev-server - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ssr-libev-server - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-ssr-python-pro-server/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-ssr-python-pro-server
+Submenu: 3. Applications
+Version: 1.0-6-20190704
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsodium +luci-lib-jsonc +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: LuCI support for SSR Python Pro Server
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for SSR Python Pro Server
+
+@@
+
+Package: luci-i18n-ssr-python-pro-server-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-6-20190704
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ssr-python-pro-server
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-ssr-python-pro-server - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ssr-python-pro-server - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-syncthing/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host 
+
+Package: luci-app-syncthing
+Submenu: 3. Applications
+Version: 1.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +syncthing
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for syncthing
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for syncthing
+
+@@
+
+Package: luci-i18n-syncthing-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-syncthing
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-syncthing - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-syncthing - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-trojan-server/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-trojan-server
+Submenu: 3. Applications
+Version: 1.0-2-20191207
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-lib-jsonc +trojan
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: LuCI support for Trojan Server
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for Trojan Server
+
+@@
+
+Package: luci-i18n-trojan-server-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-2-20191207
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-trojan-server
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-trojan-server - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-trojan-server - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-v2ray-server/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-app-v2ray-server
+Submenu: 3. Applications
+Version: 1.0-28-20191107
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libsodium +luci-lib-jsonc +unzip +v2ray
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: LuCI support for V2ray Server
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for V2ray Server
+
+@@
+
+Package: luci-i18n-v2ray-server-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-28-20191107
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-v2ray-server
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-v2ray-server - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-v2ray-server - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-app-verysync/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host 
+
+Package: luci-app-verysync
+Submenu: 3. Applications
+Version: 1.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +verysync
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for verysync
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for verysync
+
+@@
+
+Package: luci-i18n-verysync-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-verysync
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-verysync - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-verysync - 中文 (Chinese)
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-theme-argon-mc/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-theme-argon-mc
+Submenu: 4. Themes
+Version: 1.3-03-20191206
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: Argon Magic Change Theme
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Argon Magic Change Theme
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-theme-bootstrap-mc/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-theme-bootstrap-mc
+Submenu: 4. Themes
+Version: 1.0-40-20191207
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: Bootstrap Magic Change Theme By Lienol
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Bootstrap Magic Change Theme By Lienol
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/luci-theme-netgear-mc/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-theme-netgear-mc
+Submenu: 4. Themes
+Version: 1.0-15-20190503
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: Netgear Magic Change Theme
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Netgear Magic Change Theme
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/openssl1.1/Makefile
+
+Package: libopenssl1.1
+Menu: 1
+Submenu: SSL
+Version: 1.1.1d-1
+ABIVersion: 1.1.1d
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Open source SSL toolkit (libraries)
+Maintainer: 
+Source: openssl-1.1.1d.tar.gz
+License: OpenSSL
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 
+This package contains the OpenSSL shared libraries, needed by other programs.
+http://www.openssl.org/
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/pdnsd-alt/Makefile
+
+Package: pdnsd-alt
+Submenu: Web Servers/Proxies
+Version: 1.2.9b-par-a8e46ccba7b0fa2230d6c42ab6dcd92926f6c21d
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Proxy DNS Server
+Maintainer: 
+Source: pdnsd-1.2.9b-par-a8e46ccba7b0fa2230d6c42ab6dcd92926f6c21d.tar.gz
+Type: ipkg
+Description:   pdnsd, is an IPv6 capable proxy DNS server with permanent caching (the cache
+  contents are written to hard disk on exit) that is designed to cope with
+  unreachable or down DNS servers (for example in dial-in networking).
+
+  pdnsd can be used with applications that do dns lookups, eg on startup, and
+  can't be configured to change that behaviour, to prevent the often
+  minute-long hangs (or even crashes) that result from stalled dns queries.
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/redsocks2/Makefile
+
+Package: redsocks2
+Version: 0.67-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libevent2 +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Redirect any TCP connection to a SOCKS or HTTPS proxy server
+Maintainer: semigodking  <semigodking@gmail.com>
+Source: redsocks2-0.67-3052eeab75ff1ebd20c22334fbbecd808525bca7.tar.gz
+Type: ipkg
+Description: This is a modified version of original redsocks. The name is changed to be REDSOCKS2 since this release to distinguish with original redsocks. This variant is useful for anti-GFW (Great Fire Wall).
+https://github.com/semigodking/redsocks
+semigodking  <semigodking@gmail.com>
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/shadowsocks-libev-new/Makefile
+
+Package: shadowsocks-libev-config
+Submenu: Web Servers/Proxies
+Version: 3.2.1-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: shadowsocks-libev config scripts
+Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
+Source: shadowsocks-libev-3.2.1-92cab3503c94b36234872f66926de0070a9cdcd0.tar.gz
+License: GPL-3.0+
+LicenseFiles: LICENSE
+Type: ipkg
+Description: shadowsocks-libev config scripts
+https://github.com/shadowsocks/shadowsocks-libev
+Yousong Zhou <yszhou4tech@gmail.com>
+@@
+
+Package: shadowsocks-libev-ss-rules
+Submenu: Web Servers/Proxies
+Version: 3.2.1-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ip +ipset +iptables-mod-tproxy +resolveip +shadowsocks-libev-ss-redir +shadowsocks-libev-config
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: shadowsocks-libev ss-rules
+Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
+Source: shadowsocks-libev-3.2.1-92cab3503c94b36234872f66926de0070a9cdcd0.tar.gz
+License: GPL-3.0+
+LicenseFiles: LICENSE
+Type: ipkg
+Description: shadowsocks-libev ss-rules
+https://github.com/shadowsocks/shadowsocks-libev
+Yousong Zhou <yszhou4tech@gmail.com>
+@@
+
+Package: shadowsocks-libev-ss-local
+Submenu: Web Servers/Proxies
+Version: 3.2.1-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcares +libev +libmbedtls +libpcre +libpthread +libsodium +shadowsocks-libev-config +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: shadowsocks-libev ss-local
+Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
+Source: shadowsocks-libev-3.2.1-92cab3503c94b36234872f66926de0070a9cdcd0.tar.gz
+License: GPL-3.0+
+LicenseFiles: LICENSE
+Type: ipkg
+Description: shadowsocks-libev ss-local
+https://github.com/shadowsocks/shadowsocks-libev
+Yousong Zhou <yszhou4tech@gmail.com>
+@@
+
+Package: shadowsocks-libev-ss-redir
+Submenu: Web Servers/Proxies
+Version: 3.2.1-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcares +libev +libmbedtls +libpcre +libpthread +libsodium +shadowsocks-libev-config +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: shadowsocks-libev ss-redir
+Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
+Source: shadowsocks-libev-3.2.1-92cab3503c94b36234872f66926de0070a9cdcd0.tar.gz
+License: GPL-3.0+
+LicenseFiles: LICENSE
+Type: ipkg
+Description: shadowsocks-libev ss-redir
+https://github.com/shadowsocks/shadowsocks-libev
+Yousong Zhou <yszhou4tech@gmail.com>
+@@
+
+Package: shadowsocks-libev-ss-tunnel
+Submenu: Web Servers/Proxies
+Version: 3.2.1-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcares +libev +libmbedtls +libpcre +libpthread +libsodium +shadowsocks-libev-config +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: shadowsocks-libev ss-tunnel
+Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
+Source: shadowsocks-libev-3.2.1-92cab3503c94b36234872f66926de0070a9cdcd0.tar.gz
+License: GPL-3.0+
+LicenseFiles: LICENSE
+Type: ipkg
+Description: shadowsocks-libev ss-tunnel
+https://github.com/shadowsocks/shadowsocks-libev
+Yousong Zhou <yszhou4tech@gmail.com>
+@@
+
+Package: shadowsocks-libev-ss-server
+Submenu: Web Servers/Proxies
+Version: 3.2.1-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libcares +libev +libmbedtls +libpcre +libpthread +libsodium +shadowsocks-libev-config +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: shadowsocks-libev ss-server
+Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
+Source: shadowsocks-libev-3.2.1-92cab3503c94b36234872f66926de0070a9cdcd0.tar.gz
+License: GPL-3.0+
+LicenseFiles: LICENSE
+Type: ipkg
+Description: shadowsocks-libev ss-server
+https://github.com/shadowsocks/shadowsocks-libev
+Yousong Zhou <yszhou4tech@gmail.com>
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/shadowsocksr-libev/Makefile
+
+Package: shadowsocksr-libev
+Version: 2.5.6-3
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libpcre +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Lightweight Secured Socks5 Proxy
+Maintainer: 
+Source: shadowsocksr-libev-2.5.6-.tar.xz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Lightweight Secured Socks5 Proxy
+https://github.com/shadowsocksrr/shadowsocksr-libev
+
+@@
+
+Package: shadowsocksr-libev-alt
+Version: 2.5.6-3
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libpcre +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Lightweight Secured Socks5 Proxy
+Maintainer: 
+Source: shadowsocksr-libev-2.5.6-.tar.xz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Lightweight Secured Socks5 Proxy
+https://github.com/shadowsocksrr/shadowsocksr-libev
+
+@@
+
+Package: shadowsocksr-libev-server
+Version: 2.5.6-3
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libpcre +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Lightweight Secured Socks5 Proxy
+Maintainer: 
+Source: shadowsocksr-libev-2.5.6-.tar.xz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Lightweight Secured Socks5 Proxy
+https://github.com/shadowsocksrr/shadowsocksr-libev
+
+@@
+
+Package: shadowsocksr-libev-ssr-local
+Version: 2.5.6-3
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread +libpcre +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Lightweight Secured Socks5 Proxy
+Maintainer: 
+Source: shadowsocksr-libev-2.5.6-.tar.xz
+License: GPLv3
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Lightweight Secured Socks5 Proxy
+https://github.com/shadowsocksrr/shadowsocksr-libev
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/smartdns-install/Makefile
+
+Package: smartdns-install
+Submenu: 3. Applications
+Version: 2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: Automatically install smartdns
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Automatically install smartdns
+https://github.com/pymumu/smartdns
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/syncthing/Makefile
+
+Package: syncthing
+Version: v1.3.2-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A continuous file synchronization program
+Maintainer: 
+Source: syncthing-linux--v1.3.2.tar.gz
+Type: ipkg
+Description:   Syncthing is a continuous file synchronization program.
+https://github.com/syncthing/syncthing
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/tcping/Makefile
+
+Package: tcping
+Version: 0.1-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: tcping measures the latency of a tcp-connection
+Maintainer: 
+Source: tcping-0.1-79ef6f85d7147d33d0835fac060618ab136503c8.tar.gz
+Type: ipkg
+Description: tcping measures the latency of a tcp-connection
+https://github.com/jlyo/tcping
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/trojan/Makefile
+Build-Depends: openssl1.1
+
+Package: trojan
+Version: 1.13.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +boost +boost-system +boost-program_options +boost-date_time
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: An unidentifiable mechanism that helps you bypass GFW
+Maintainer: GreaterFire
+Source: trojan-1.13.0-842ad5bb07eb8bce035fb274571e586629a97c99.tar.gz
+License: GPL-3.0
+Type: ipkg
+Description: An unidentifiable mechanism that helps you bypass GFW
+https://github.com/trojan-gfw/trojan
+GreaterFire
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/v2ray/Makefile
+
+Package: v2ray
+Version: 4.21.3-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +ca-certificates
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: V2Ray is a cross-platform proxy software
+Maintainer: 
+Source: 
+Type: ipkg
+Description: V2Ray is a cross-platform proxy software
+https://github.com/v2ray/v2ray-core
+
+@@
+
+
+Source-Makefile: feeds/lienol/lienol/verysync/Makefile
+
+Package: verysync
+Version: v1.2.9-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A efficient data transmission tool
+Maintainer: 
+Source: verysync-linux--v1.2.9.tar.gz
+Type: ipkg
+Description:   Verysync is a efficient data transmission tool.
+http://www.verysync.com
+
+@@
+
+

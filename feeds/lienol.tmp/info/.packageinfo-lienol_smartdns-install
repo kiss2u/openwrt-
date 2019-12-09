@@ -1,0 +1,22 @@
+Source-Makefile: feeds/lienol/lienol/smartdns-install/Makefile
+
+Package: smartdns-install
+Submenu: 3. Applications
+Version: 2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: Automatically install smartdns
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Automatically install smartdns
+https://github.com/pymumu/smartdns
+
+@@
+
+

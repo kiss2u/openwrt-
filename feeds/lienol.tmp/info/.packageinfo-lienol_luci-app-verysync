@@ -1,0 +1,41 @@
+Source-Makefile: feeds/lienol/lienol/luci-app-verysync/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host 
+
+Package: luci-app-verysync
+Submenu: 3. Applications
+Version: 1.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +verysync
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for verysync
+Maintainer: 
+Source: 
+Type: ipkg
+Description: LuCI support for verysync
+
+@@
+
+Package: luci-i18n-verysync-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: 1.0-2
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-verysync
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-verysync - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-verysync - 中文 (Chinese)
+
+@@
+
+

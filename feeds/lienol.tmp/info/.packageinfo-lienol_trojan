@@ -1,0 +1,23 @@
+Source-Makefile: feeds/lienol/lienol/trojan/Makefile
+Build-Depends: openssl1.1
+
+Package: trojan
+Version: 1.13.0-1
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +boost +boost-system +boost-program_options +boost-date_time
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: An unidentifiable mechanism that helps you bypass GFW
+Maintainer: GreaterFire
+Source: trojan-1.13.0-842ad5bb07eb8bce035fb274571e586629a97c99.tar.gz
+License: GPL-3.0
+Type: ipkg
+Description: An unidentifiable mechanism that helps you bypass GFW
+https://github.com/trojan-gfw/trojan
+GreaterFire
+@@
+
+

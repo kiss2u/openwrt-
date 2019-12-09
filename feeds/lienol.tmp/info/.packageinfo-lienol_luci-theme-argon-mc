@@ -1,0 +1,22 @@
+Source-Makefile: feeds/lienol/lienol/luci-theme-argon-mc/Makefile
+Build-Depends: lua/host luci-base/host 
+
+Package: luci-theme-argon-mc
+Submenu: 4. Themes
+Version: 1.3-03-20191206
+Depends: +libc +GCC_LIBSSP:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: LuCI for Lienol
+Repository: base
+Title: Argon Magic Change Theme
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Argon Magic Change Theme
+
+@@
+
+
